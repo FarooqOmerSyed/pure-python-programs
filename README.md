@@ -1,3 +1,3 @@
 # Read .gitignore file
 
-# this repo in master branch
+this repo in master branch
