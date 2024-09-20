@@ -2,19 +2,20 @@ import time
 
 def timer():
     try:
-         user_input = int(input("Enter timer duration in minutes: "))
-         if user_input <= 0:
+         user_mins = int(input("Enter timer duration in minutes: "))
+         user_interval = int(input("Enter your interval: "))
+         if user_mins <= 0:
              print("Enter a positve number of minutes")
              return
     except ValueError:
              print("Invalid input")
              return
          
-    total_seconds = user_input * 60
+    total_seconds = user_mins * 60
     elapsed_time = 0 
-    interval = 1 * 60 
+    interval = user_interval * 60 
     
-    print("timer started for {} minutes." .format(user_input))
+    print("timer started for {} minutes." .format(user_mins))
     
     while elapsed_time < total_seconds:
         time.sleep(1)
