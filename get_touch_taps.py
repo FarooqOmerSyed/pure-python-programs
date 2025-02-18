@@ -1,3 +1,5 @@
+"""this script fetches the touch/tap coordinates from android device"""
+
 import subprocess
 
 
@@ -46,5 +48,6 @@ def collect_touch_events(device_id):
 
 
 if __name__ == "__main__":
+    # device could be here anything, realated to your usb device connected type adb devices -l to know
     device_id = "36221RTJWW0LAQ"
     collect_touch_events(device_id)
