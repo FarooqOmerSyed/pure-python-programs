@@ -49,5 +49,6 @@ def collect_touch_events(device_id):
 
 if __name__ == "__main__":
     # device could be here anything, realated to your usb device connected type adb devices -l to know
-    device_id = "36221RTJWW0LAQ"
+    # 46131JEAYL02AF 
+    device_id = "46131JEAYL02AF"
     collect_touch_events(device_id)
